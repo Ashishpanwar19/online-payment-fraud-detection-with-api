@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Form</title>
+</head>
+<body>
+    <h1>Transaction Prediction</h1>
+    <form action="/predict" method="POST">
+        <label for="type">Transaction Type:</label>
+        <select name="type" required>
+            <option value="CASH_OUT">CASH_OUT</option>
+            <option value="PAYMENT">PAYMENT</option>
+            <option value="CASH_IN">CASH_IN</option>
+            <option value="TRANSFER">TRANSFER</option>
+            <option value="DEBIT">DEBIT</option>
+        </select><br>
+
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" step="any" required><br>
+
+        <label for="oldbalanceOrg">Old Balance:</label>
+        <input type="number" name="oldbalanceOrg" step="any" required><br>
+
+        <label for="newbalanceOrig">New Balance:</label>
+        <input type="number" name="newbalanceOrig" step="any" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction is not none %}
+    <h3>Prediction: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>

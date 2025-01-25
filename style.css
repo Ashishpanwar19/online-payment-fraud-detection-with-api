@@ -1,0 +1,8 @@
+body {
+    background-image: url('"C:\Users\ashis\Downloads\background.jpg"');
+    
+    background-size: cover;
+    /* background-position: center; */
+    font-family: Arial, sans-serif;
+    align-items: center;
+}
