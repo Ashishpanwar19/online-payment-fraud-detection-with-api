@@ -1,4 +1,5 @@
-# online-payment-fraud-detection-with-api
+Development of an Online Payment Fraud Detection System and Prediction App
+
 The dataset used for training and testing the model contains online transaction data. It includes the following columns:
 step: Represents a unit of time where 1 step equals 1 hour. type: Type of online transaction. amount: The amount of the transaction. nameOrig: Customer starting the transaction. oldbalanceOrg: Balance before the transaction. newbalanceOrig: Balance after the transaction. nameDest: Recipient of the transaction. oldbalanceDest: Initial balance of recipient before the transaction. newbalanceDest: The new balance of recipient after the transaction. isFraud: Indicates whether the transaction is fraudulent (1) or not (0).
 
